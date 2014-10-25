@@ -18,7 +18,7 @@ If you need to specify the requested names, just use the following options:
 ```javascript
 $('span').names({
     
-    type: surname               // Either 'name', 'surname', 'gender' or 'country'
+    type: 'surname',            // Either 'name', 'surname', 'gender' or 'country'
     country: 'germany',         // One of the countries from here: http://git.io/WCYA3Q
     gender: 'female',           // Either 'male' or 'female'
     complete: function() {}     // A function to be executed after loading all names
