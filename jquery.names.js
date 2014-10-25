@@ -33,10 +33,7 @@
 		}
 		
 		
-		if( cached_config == null ||
-		cached_config.count != count ||
-		cached_config.country != config.country ||
-		cached_config.gender != config.gender ) {
+		if( cached_config == null || cached_config.count != count || cached_config.country != config.country || cached_config.gender != config.gender ) {
 		
 			var check = false;
 		
