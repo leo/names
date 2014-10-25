@@ -1,7 +1,7 @@
 names
 =====
 
-This minimal jquery-plugin replaces every occurence of a specific element with a disered name, gender oder country from [uinames](http://uinames.com). It's perfect for developing themes and apps with placeholder-names.
+This minimal jquery-plugin replaces every occurence of a specific element with a disered name, gender oder country from [uinames](http://uinames.com). It's perfect for developing themes for example.
 
 ### usage
 
