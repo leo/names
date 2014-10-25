@@ -1,3 +1,5 @@
+/* names v1 by @leo */
+
 (function($) {
 	
 	$.fn.names = function(options) {
