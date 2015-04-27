@@ -31,7 +31,5 @@ $('span').names({
 <br>
 **!!:** The use of multiple different HTML-tags is currently not supported (but will be added soon).
 
-License: <a href="http://www.wtfpl.net/"><img src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png" width="80" height="15" alt="WTFPL" /></a>
-
 If you're having trouble with my plugin, pleace report them to me.<br>
 I'll to my best to solve them. Thanks! :)
