@@ -1,7 +1,6 @@
-names
-=====
+# names
 
-This minimal jquery-plugin replaces every occurence of a specific element with a disered name, gender oder country from [uinames](http://uinames.com). It's perfect for developing themes for example.
+This package acts as an API client for my favorite generator of random names: [uinames](http://uinames.com). It's perfect for prototyping stuff or examples of real names in production apps.
 
 ### usage
 
@@ -17,12 +16,12 @@ If you need to specify the requested names, just use the following options:
 
 ```javascript
 $('span').names({
-    
+
     type: 'surname',            // Either 'name', 'surname', 'gender' or 'country'
     country: 'germany',         // One of the countries from here: http://git.io/WCYA3Q
     gender: 'female',           // Either 'male' or 'female'
     complete: function() {}     // A function to be executed after loading all names
-        
+
 });
 ```
 
