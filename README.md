@@ -10,7 +10,7 @@ Install the package using [npm](https://www.npmjs.com) and save it to the depend
 npm install --save names
 ```
 
-Now you have two choices to interact with the package. Since it's based on the concept of [promises](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise), you can either use async/await (it hasn't yet landed in node, so you'll have to use a transpiler)...
+Now you have two choices to interact with the package. Since it's based on the concept of [promises](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise), you can either use async/await (it hasn't yet landed in node, so you'll have to [transpile](https://gist.github.com/rauchg/8199de60db48026a6670620a1c33b700) the code)...
 
 ```js
 import names from 'names'
@@ -36,7 +36,38 @@ names.catch(function (err) {
 })
 ```
 
+Both examples will result in a response that looks like the following:
+
+```json
+{
+  "name": "John",
+  "surname": "Doe",
+  "gender": "male",
+  "region": "United States"
+}
+```
+
 ## Configuration
+
+Indipendent from which of the methods mentioned above you would like to use, you can always pass a configuration object to the module's main function:
+
+```js
+names({
+  gender: 'female',
+  amount: 10
+  ...
+})
+```
+
+Here's the full list of all available options:
+
+| Name | Description | Type |
+| ---- | ----------- | ---- |
+| amount | Amount of names to return, between `1` and `500` | Integer |
+| gender | Limit results to the `male` or `female` gender | String |
+| region | Region-specific results | String |
+| minLength | Require a minimum number of characters in a name | Integer |
+| maxLength | Require a maximum number of characters in a name | Integer |
 
 ## Contribute
 
