@@ -34,3 +34,19 @@ test('no fields missing', t => {
 
   t.pass()
 })
+
+test('error gets triggered', async t => {
+  let list
+
+  try {
+    let list = names({
+      amount: 'Hey'
+    })
+  } catch (err) {
+    t.pass()
+  }
+
+  if (list != undefined) {
+    t.fail()
+  }
+})

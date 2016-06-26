@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "prepublish": "gulp transpile",
-    "test": "eslint src/** test/** && ava"
+    "test": "eslint src/** test/** && ava -v"
   },
   "repository": "leo/names",
   "eslintConfig": {
