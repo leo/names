@@ -2,8 +2,10 @@
   "name": "names",
   "version": "1.0.0",
   "description": "Minimal API client for uinames.com",
-  "main": "index.js",
+  "main": "dist/index",
   "scripts": {
+    "start": "gulp",
+    "prepublish": "gulp transpile",
     "test": "eslint src/**"
   },
   "repository": "leo/names",
@@ -14,6 +16,12 @@
     "generator",
     "name"
   ],
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs",
+      "transform-async-to-generator"
+    ]
+  },
   "author": "leo",
   "license": "MIT",
   "bugs": {
@@ -21,7 +29,15 @@
   },
   "homepage": "https://github.com/leo/names#readme",
   "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
     "eslint": "^2.13.1",
-    "eslint-config-default": "^0.2.1"
+    "eslint-config-default": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0"
+  },
+  "dependencies": {
+    "request-promise": "^3.0.0"
   }
 }
