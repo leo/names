@@ -16,6 +16,21 @@ test.beforeEach('requesting data', async t => {
   t.pass()
 })
 
-test('response is valid object', async t => {
+test('response is valid object', t => {
   t.truthy(isObject(t.context))
+})
+
+test('no fields missing', t => {
+  const needed = [
+    'name',
+    'surname',
+    'gender',
+    'region'
+  ]
+
+  for (let field of needed) {
+    if (!t.context[field]) t.fail()
+  }
+
+  t.pass()
 })
