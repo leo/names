@@ -49,7 +49,7 @@ Both examples will result in a response that looks like the following:
 
 ## Configuration
 
-Indipendent from which of the methods mentioned above you would like to use, you can always pass a configuration object to the module's main function:
+Indipendent from which of the methods mentioned above you would like to use, you can always pass a configuration object to the module's main method:
 
 ```js
 names({
