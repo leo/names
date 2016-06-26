@@ -1,0 +1,27 @@
+{
+  "name": "names",
+  "version": "1.0.0",
+  "description": "Minimal API client for uinames.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint src/**"
+  },
+  "repository": "leo/names",
+  "keywords": [
+    "uinames",
+    "names",
+    "random",
+    "generator",
+    "name"
+  ],
+  "author": "leo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo/names/issues"
+  },
+  "homepage": "https://github.com/leo/names#readme",
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-default": "^0.2.1"
+  }
+}
