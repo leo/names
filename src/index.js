@@ -41,7 +41,7 @@ const isAllowed = params => {
   }
 }
 
-export default (config) => {
+export default config => {
   let allowed
 
   try {
