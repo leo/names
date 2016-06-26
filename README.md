@@ -10,7 +10,7 @@ Install the package using [npm](https://www.npmjs.com) and save it to the depend
 npm install --save names
 ```
 
-And then start using it:
+Now you have two choices to interact with the package. Since it's based on the concept of [promises](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise), you can either use async/await (it hasn't yet landed in node, so you'll have to use a transpiler)...
 
 ```js
 import names from 'names'
@@ -20,6 +20,20 @@ try {
 } catch (err) {
   console.error(err)
 }
+```
+
+...or the old way of doing it:
+
+```js
+const names = require('names')()
+
+names.then(function (list) {
+  console.log(list)
+})
+
+names.catch(function (err) {
+  console.error(err)
+})
 ```
 
 ## Configuration
