@@ -17,5 +17,5 @@ test.beforeEach('requesting data', async t => {
 })
 
 test('response is valid object', async t => {
-  console.log(t.context)
+  t.truthy(isObject(t.context))
 })
