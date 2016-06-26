@@ -6,9 +6,13 @@
   "scripts": {
     "start": "gulp",
     "prepublish": "gulp transpile",
-    "test": "eslint src/**"
+    "test": "eslint src/** test/** && ava"
   },
   "repository": "leo/names",
+  "eslintConfig": {
+    "extends": "default",
+    "parser": "babel-eslint"
+  },
   "keywords": [
     "uinames",
     "names",
@@ -22,6 +26,11 @@
       "transform-async-to-generator"
     ]
   },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
+  },
   "author": "leo",
   "license": "MIT",
   "bugs": {
@@ -29,6 +38,8 @@
   },
   "homepage": "https://github.com/leo/names#readme",
   "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-eslint": "^6.1.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
     "eslint": "^2.13.1",
