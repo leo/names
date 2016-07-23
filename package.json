@@ -40,7 +40,7 @@
     "ava": "^0.15.2",
     "babel-eslint": "^6.1.2",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-register": "^6.9.0",
+    "babel-register": "^6.11.5",
     "eslint": "^3.1.1",
     "eslint-config-default": "^0.2.1",
     "gulp": "^3.9.1",
