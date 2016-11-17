@@ -38,7 +38,7 @@
   "homepage": "https://github.com/leo/names#readme",
   "devDependencies": {
     "ava": "^0.17.0",
-    "babel-eslint": "^6.1.2",
+    "babel-eslint": "^7.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
     "babel-register": "^6.11.5",
     "eslint": "^3.1.1",
